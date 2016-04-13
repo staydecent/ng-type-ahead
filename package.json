@@ -1,0 +1,39 @@
+{
+  "name": "ng-type-ahead",
+  "version": "0.1.0",
+  "description": "An Angular.js 1.5+ type aheaed component.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node scripts.js",
+    "test": "karma start karma.conf.js --browsers Firefox --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staydecent/ng-type-ahead.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "component",
+    "typeahead",
+    "autocomplete"
+  ],
+  "author": "Adrian Unger <dev@staydecent.ca>",
+  "license": "MIT",
+  "homepage": "https://github.com/staydecent/ng-type-ahead#readme",
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "angular-mocks": "^1.5.3",
+    "browserify": "^13.0.0",
+    "chai": "^3.5.0",
+    "jshint": "^2.9.1",
+    "karma": "^0.13.22",
+    "karma-browserify": "^5.0.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-mocha": "^0.2.2",
+    "mocha": "^2.4.5",
+    "node-static": "^0.7.7",
+    "scripts-plus": "^1.1.0",
+    "uglifyify": "^3.0.1"
+  }
+}

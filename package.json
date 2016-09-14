@@ -1,6 +1,6 @@
 {
   "name": "ng-type-ahead",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Angular.js 1.5.x type ahead component.",
   "main": "src/index.js",
   "scripts": {

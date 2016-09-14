@@ -15,7 +15,15 @@
   angular
     .module(moduleName, [])
     .component('typeAhead', {
-      templateUrl: 'template.html',
+      template: [
+        '<div class="type-ahead-holder" ng-class="{\'type-ahead-suggestions-visible\': scope.showSuggestions}">',
+          '<input placeholder="{{scope.placeholder}}" ng-model="scope.input" ng-change="scope.onInput()" ng-keyup="scope.onKeyUp($event)" ng-blur="scope.onBlur()" class="type-ahead-input" />',
+
+          '<ul class="type-ahead-list">',
+            '<li class="type-ahead-list-item" ng-repeat="item in scope.suggestions" ng-mousedown="scope.onSelect(item)" ng-class="{\'active\': $index == scope.currPos}">{{item}}</li>',
+          '</ul>',
+        '</div>'
+      ].join(''),
       controller: TypeAheadController,
       controllerAs: 'scope',
       bindings: {

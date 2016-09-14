@@ -34,6 +34,7 @@
     "mocha": "^2.4.5",
     "node-static": "^0.7.7",
     "scripts-plus": "^1.1.0",
-    "uglifyify": "^3.0.1"
+    "uglifyify": "^3.0.1",
+    "watchify": "^3.7.0"
   }
 }
